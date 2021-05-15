@@ -5,7 +5,7 @@ This is environments that use to reproduce Vim (+plugin) issue/problem
 ## run
 
 ```shell
-vim -N -u testvimrc.vim -i NONE
+vim -N --clean -u testvimrc.vim
 ```
 
 or use gvim
