@@ -1,3 +1,4 @@
+" test vimrc
 let s:vimrc_base       = expand('%:p:h')
 let s:dein_dir         = expand(s:vimrc_base . '/cache/dein')
 let s:dein_testtoml    = expand(s:vimrc_base . '/test.toml')
@@ -19,6 +20,10 @@ if dein#load_state(s:dein_dir)
 
   call dein#end()
   call dein#save_state()
+endif
+
+if (0 == v:vim_did_enter) && dein#check_install()
+  call dein#install()
 endif
 
 " add option/settings
