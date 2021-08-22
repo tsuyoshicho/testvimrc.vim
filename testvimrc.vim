@@ -19,6 +19,9 @@ if !isdirectory(s:dein_install_dir)
 endif
 let &rtp = s:dein_install_dir . ',' . &rtp
 
+" pre setting
+let g:dein#default_options = { 'merged': v:true }
+
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir, [s:testrc, s:dein_testtoml])
 
