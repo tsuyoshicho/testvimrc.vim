@@ -34,7 +34,7 @@ endif
 " call source
 call dein#call_hook('source')
 " set post source at non-lazy plugin
-  autocmd VimEnter * nested call dein#call_hook('post_source')
+autocmd VimEnter * nested call dein#call_hook('post_source')
 
 if (0 == v:vim_did_enter) && dein#check_install()
   call dein#install()
