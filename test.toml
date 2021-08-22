@@ -1,3 +1,9 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 merged = 0
+
+[[plugins]]
+repo = 'tyru/capture.vim'
+
+# ----
+# test plugin
