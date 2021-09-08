@@ -5,5 +5,12 @@ merged = 0
 [[plugins]]
 repo = 'tyru/capture.vim'
 
+[[plugins]]
+repo = 'thinca/vim-prettyprint'
+hook_add = '''
+  let g:prettyprint_string          = [ 'split', 'raw' ]
+  let g:prettyprint_show_expression = 1
+'''
+
 # ----
 # test plugin
